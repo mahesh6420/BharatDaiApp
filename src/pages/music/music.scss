@@ -1,0 +1,45 @@
+$tn-app-theme-color: rgb(45, 86, 107);
+
+page-music,ion-content{
+    background: #ddd;
+}
+
+ion-list{
+    border-bottom: 1px inset black;
+    ion-thumbnail{
+        height: 50px;
+        width: 50px;
+        img{
+
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        h2{
+            padding-top: 0 !important;
+            line-height: 0;
+        }
+        .right{
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+ion-footer{
+    background: $tn-app-theme-color;
+    color: white;
+    .play{
+        height: 100%;
+        width: 100%;
+      
+        float: right;
+        vertical-align: middle;
+        ion-icon{
+            font-size: 2rem;
+            margin-right: 5px;
+        }
+    }
+}

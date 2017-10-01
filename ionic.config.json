@@ -1,0 +1,8 @@
+{
+  "name": "Bharat_Samari",
+  "app_id": "38895586",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

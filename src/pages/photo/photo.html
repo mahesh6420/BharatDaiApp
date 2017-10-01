@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{Title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="photos-page">
+
+  <!-- <div class="date">
+  Today
+</div>
+
+<div class="bimage">
+  <div class="imgwrap" *ngFor="let photo of bphotos">
+    <img src="assets/img/{{photo}}" imageViewer>
+  </div>
+  </div> -->
+  <!-- <ion-grid class="main-photos">
+    <ion-row >
+      <ion-col class="col-md-4" *ngFor="let photo of bphotos"  >
+        <ion-card >
+          <img src="assets/img/{{photo}}" imageViewer>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col >
+        hi-4
+      </ion-col>
+      <ion-col >
+        hi -6
+      </ion-col>
+    </ion-row>
+
+  </ion-grid> -->
+
+   <gallery [images]='bphotos'></gallery>
+   <ion-fab right bottom>
+      <button ion-fab color="light"><ion-icon name="share"></ion-icon></button>
+      <ion-fab-list side="top">
+          <ion-card>
+              <ion-card-header>
+                 <strong>
+                    Find me 
+                 </strong> 
+                </ion-card-header>
+                <ion-card-content>
+          
+                     <a ion-button icon-only *ngFor="let social of mainApiService.bsocial" href="{{social.href}}"> 
+                          <ion-icon name="{{social.icon}}"></ion-icon>
+                     </a>
+                     <br>
+                     <h3>
+                       <strong>
+                          Visit my site
+                       </strong>
+                       </h3>
+                     <a href="http://www.bharatsamari.com/">bharatsamari.com</a>
+                </ion-card-content>
+          </ion-card>
+      </ion-fab-list>
+    </ion-fab>
+</ion-content>

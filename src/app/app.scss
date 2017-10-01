@@ -1,0 +1,101 @@
+// $tn-app-theme-color: #676DE1;
+$tn-app-theme-color: rgb(45, 86, 107);
+//$tn-app-theme-color: #37474f;
+
+ion-content{
+  padding:0px;
+  margin:0px;
+  background: #ddd;
+}
+
+ul.tn-sidenav {
+  padding: 0px;
+  margin: 0px;
+
+  li {
+    .item-inner {
+      border: none !important;
+      .input-wrapper{
+        .label{
+          color: $tn-app-theme-color;
+          .icon{
+            margin-right: 2px;
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+div.tn-profile {
+  background: $tn-app-theme-color;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+
+
+  .tn-profile-photo {
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/com-luklasoft-bharat-samari.appspot.com/o/photos%2Fthumbnail%2Ficon.png?alt=media&token=7b8c28d9-4a7b-4a7e-9360-5591278b1d6f);
+  }
+  .tn-profile-intro{
+    font-size:16px;
+    div{
+      font-size:13px;
+    }
+  }
+
+}
+.footer{
+  padding:10px 15px;
+  a{
+    color: white;
+  }
+  h4{
+    padding: 0 !important;
+    line-height: 0;
+  }
+}
+/*overwrite*/
+/*navbar*/
+.toolbar-background-md {
+  background: $tn-app-theme-color;
+}
+
+.bar-button-default-md {
+  color: white;
+
+  &:hover {
+    color: white !important;
+  }
+}
+
+.toolbar-title-md {
+  color: white;
+}
+/*navbar-end*/
+
+//card 
+
+.card-md {
+  p{
+    font-size: 1.2rem;
+    em{
+      font-size: 1.1rem;
+    }
+    strong{
+      
+    }
+  }
+}
+/*overwrite end*/
+
+

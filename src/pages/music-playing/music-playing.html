@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>{{Title}}</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content>
+    <ion-list *ngFor="let track of musicApi.bmusic,let i = index" (click)="play(track,i)">
+      <ion-row>
+        <ion-col col-2 col-m-2>
+            <ion-thumbnail item-start>
+                <img src="{{track.art}}" alt="{{track.art}}">
+              </ion-thumbnail>
+        </ion-col>
+        <ion-col col-10 col-m-10>
+          <div>
+              <div class="right">
+                  <div class="left">
+                      <h2>{{track.title}} </h2>
+                      <p>{{track.artist}}</p>
+                  </div>
+                  <div class="right">
+                      <!-- <button ion-fab mini clear item-end (click)="check(track.src,i)">
+                            <ion-icon *ngIf="!playing" name="play"></ion-icon>
+                            <ion-icon *ngIf="playing" name="pause"></ion-icon>
+                      </button> -->
+                  </div>
+               </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      
+      
+     
+    </ion-list>
+  
+  </ion-content>
+  <!-- <ion-footer >
+    <ion-row> -->
+      <!-- <ion-col col-2 >
+          <div *ngIf="tracksAdded; then imgShow else imgShowNot">
+              <img #imgShow src="{{allTracks[selectedTrack].art}}" alt="">
+              <img #imgShowNot src="" alt="">
+          </div>
+      </ion-col> -->
+      <!-- <ion-col col-12 > -->
+          <!-- <ion-row>
+              <ion-col col-12>
+              <progress-bar>
+  
+              </progress-bar>
+              </ion-col>
+          </ion-row> -->
+          <!-- <ion-row>
+              <ion-col col-8 >
+                <div *ngIf="trackSelected">
+                    <p> <strong>{{musicApi.bmusic[selectedTrack].title}}</strong> o <em>{{musicApi.bmusic[selectedTrack].artist}}</em></p>      
+                </div> -->
+                <!-- <div *ngIf="!track">
+                  Select track to play
+                </div> -->
+                <!-- </ion-col>
+               <ion-col col-4 end>
+                 <div class="play">
+                   <p>
+                      <ion-icon name="skip-backward" (click)="prev()"></ion-icon>
+                      <ion-icon name="play" *ngIf="!playing" (click)="check(track,selectedTrack)" ></ion-icon>
+                      <ion-icon name="pause" *ngIf="playing" (click)="check(track,selectedTrack)"></ion-icon>
+                      <ion-icon name="skip-forward" (click)="next()"></ion-icon>
+                   
+                   </p>
+                  </div>
+                 
+               </ion-col>
+          </ion-row>
+       </ion-col>
+    </ion-row> -->
+    <!-- <h3>index {{selectedTrack}}</h3>
+      {{duration}}
+      <br />
+      {{currentPosition}} -->
+    <!-- </ion-footer> -->

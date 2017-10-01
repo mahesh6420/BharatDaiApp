@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{Title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card *ngFor="let info of info">
+  <ion-card-header>
+      <strong>
+          About Bharat Samari App
+        </strong>   
+    </ion-card-header>
+    <ion-card-content>
+        <em>
+            <b>verion:{{info.version}}</b>
+            <br>
+        </em>
+        <em>
+          {{info.appabout}}
+        </em>
+      </ion-card-content>
+      <ion-card-header>
+          <strong>
+              Developer information
+            </strong>   
+        </ion-card-header>
+        <ion-card-content>
+            <em>
+               Developed by: Mahesh Sunuwar
+            </em>
+
+            <p>
+              {{info.developerbody}}
+             <a href="http://{{info.developerlink}}">{{info.developerlink}}</a>
+            </p>
+            
+          </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+      <strong>
+         Privacy Policy
+        </strong>   
+    </ion-card-header>
+    <ion-card-content>
+       <em>
+         You can find app privacy policy 
+         <a href="http://bharatsamari.com/policy.php">here</a>  
+       </em>
+      </ion-card-content>
+</ion-card>
+
+
+
+
+  <ion-fab right bottom>
+      <button ion-fab color="light"><ion-icon name="share"></ion-icon></button>
+      <ion-fab-list side="top">
+          <ion-card>
+              <ion-card-header>
+                 <strong>
+                    Find me 
+                 </strong> 
+                </ion-card-header>
+                <ion-card-content>
+          
+                     <a ion-button icon-only *ngFor="let social of socialAccounts" href="{{social.href}}"> 
+                          <ion-icon name="{{social.icon}}"></ion-icon>
+                     </a>
+                     <br>
+                     <h3>
+                       <strong>
+                          Visit my site
+                       </strong>
+                       </h3>
+                     <a href="http://www.bharatsamari.com/">bharatsamari.com</a>
+                </ion-card-content>
+          </ion-card>
+      </ion-fab-list>
+    </ion-fab>
+</ion-content>

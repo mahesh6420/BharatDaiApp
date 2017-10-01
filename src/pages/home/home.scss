@@ -1,0 +1,31 @@
+page-home {
+    .center {
+        text-align: center;  
+    }
+}
+
+.tn-panel {
+  
+  .tn-panel-title {
+    padding: 15px;
+    background-color: #2d636b;
+    color:white;
+  }
+  .tn-panel-body{
+    padding:15px 0;
+    background: #ddd;
+  }
+}
+
+.viewall{
+  display: flex;
+  float: right;
+  bottom: 9px;
+  color: #4E4E4E !important;
+  background: white !important;
+}
+ion-slide{
+  div.imgContainer{
+    max-height: 250px;
+  }
+}

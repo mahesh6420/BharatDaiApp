@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>{{Title}}</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+<ion-card *ngFor="let biography of Biography">
+    <ion-card-header>
+        <strong>
+            {{biography.title}}
+          </strong>   
+      </ion-card-header>
+      <ion-card-content>
+          <em>
+              {{biography.content}}
+          </em>
+        </ion-card-content>
+</ion-card>
+
+
+
+
+    <ion-fab right bottom>
+        <button ion-fab color="light"><ion-icon name="share"></ion-icon></button>
+        <ion-fab-list side="top">
+            <ion-card>
+                <ion-card-header>
+                   <strong>
+                      Find me 
+                   </strong> 
+                  </ion-card-header>
+                  <ion-card-content>
+            
+                       <a ion-button icon-only *ngFor="let social of socialAccounts" href="{{social.href}}"> 
+                            <ion-icon name="{{social.icon}}"></ion-icon>
+                       </a>
+                       <br>
+                       <h3>
+                         <strong>
+                            Visit my site
+                         </strong>
+                         </h3>
+                       <a href="http://www.bharatsamari.com/">bharatsamari.com</a>
+                  </ion-card-content>
+            </ion-card>
+        </ion-fab-list>
+      </ion-fab>
+</ion-content>

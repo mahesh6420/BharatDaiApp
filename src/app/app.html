@@ -1,0 +1,32 @@
+<ion-menu colorPrimary [content]="content">
+  
+  <ion-content>
+    <div class="tn-profile">
+      <div class="tn-profile-photo">
+
+      </div>
+      <br />
+      <div class="tn-profile-intro">
+        Bharat Samari
+        <div>
+          Rapper/Singer
+        </div>
+      </div>
+    </div>
+    <ul class="tn-sidenav">
+      <li menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon name={{p.icon}}></ion-icon>
+          {{p.title}}
+        
+      </li>
+      
+    </ul>
+  </ion-content>
+<ion-footer class="footer">
+  <h4>Visit My Site</h4>
+  <a href="http://www.bharatsamari.com"> bharatsamari.com</a>
+</ion-footer>
+</ion-menu>
+
+<!-- able swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

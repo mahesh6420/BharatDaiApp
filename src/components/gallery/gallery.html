@@ -1,0 +1,9 @@
+<ion-grid>
+    <ion-row>
+        <ion-col col-4 col-md-3 col-sm-4 col-xs-6 
+            *ngFor="let image of images; let i = index" 
+            (tap)="openModal(i)">
+            <img [src]="image.thumbnailUrl" />
+    </ion-col>
+    </ion-row>
+</ion-grid>

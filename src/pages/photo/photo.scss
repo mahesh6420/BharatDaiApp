@@ -1,0 +1,29 @@
+// .date{
+//     margin: -15px;
+//     margin-bottom: 5px;
+//     background-color: rgba(103, 213,255,0.54);
+//     padding: 10px 15px;
+// }
+
+// .bimage{
+//     display: flex;
+//     flex-wrap: wrap;
+//     .imgwrap{
+//         height: 80px;
+//         width: 100px;
+//         margin-right:5px; 
+//         img{
+       
+//     }
+//     }
+    
+// }
+
+.photos-page{
+    ion-grid.main-photos{
+        ion-row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

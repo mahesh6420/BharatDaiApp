@@ -1,0 +1,64 @@
+// .body-title {
+//     background: #676DE1;
+//     padding: 15px;
+//     font-size: 100% !important;
+//     font-weight: lighter !important;
+//     color: white;
+// }
+
+// .ion-content {
+//     color: black;
+// }
+
+// .video-list{
+//     width: 100%;
+//     button{
+//         width: 100%;
+//         padding:25px;
+//         background: #67E19E;
+//         border-bottom: 1px solid white;
+//     }
+// }
+$redcolor:#D32F2F;
+ion-card-content{
+    padding-top: 15px;
+    position: relative;
+    ion-fab{
+      
+        position: absolute;
+        top: -30px;
+        right: -5px !important;
+    }
+}
+button.fab{
+    background:  $redcolor;
+}
+
+
+
+//name inside thumbnail
+// .card-background-page {
+    
+//       ion-card {
+//         position: relative;
+//         text-align: center;
+//       }
+    
+//       .card-title {
+//         position: absolute;
+//         top: 36%;
+//         font-size: 2.0em;
+//         width: 100%;
+//         font-weight: bold;
+//         color: #fff;
+//       }
+    
+//       .card-subtitle {
+//         font-size: 1.0em;
+//         position: absolute;
+//         top: 52%;
+//         width: 100%;
+//         color: #fff;
+//       }
+    
+//     }

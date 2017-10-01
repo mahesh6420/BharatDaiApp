@@ -1,0 +1,10 @@
+<ion-content class="wrapper">
+
+    <ion-slides initialSlide="{{selectId}}" loop="true">
+        <ion-slide *ngFor="let image of images" (tap)="closeModal()">
+             <img class="imgModal" src="{{image.url}}" />
+             <!-- <h2>{{image.title}}</h2> -->
+        </ion-slide>
+    </ion-slides>
+   
+</ion-content>
